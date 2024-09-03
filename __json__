@@ -1,0 +1,34 @@
+{
+    "app.py": {
+        "description": "Main entry point for the Flask application. Sets up the Flask app, defines routes, and starts the server.",
+        "dependencies": {
+            "templates/index.html": [
+                "index_html"
+            ]
+        },
+        "exposes": [
+            "app"
+        ]
+    },
+    "templates/index.html": {
+        "description": "HTML template that displays 'hello world' content",
+        "exposes": [
+            "index_html"
+        ]
+    },
+    "requirements.txt": {
+        "description": "List of Python dependencies required for the application",
+        "exposes": [
+            "flask"
+        ]
+    },
+    "README.md": {
+        "description": "README with basic documentation and 'how to run' guide"
+    },
+    ".gitignore": {
+        "description": ".gitignore with node-modules and cache files"
+    },
+    "run.sh": {
+        "description": "bash run script, should: install Flask, install required packages, run the application"
+    }
+}
